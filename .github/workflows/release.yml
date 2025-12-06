@@ -21,7 +21,7 @@ jobs:
           echo "File 3" > 3.txt
 
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        uses: EronWright/action-gh-release@fix-make-latest-finalize
         with:
           tag_name: test-release-${{ github.run_number }}
           name: "Test Release ${{ github.run_number }}"
