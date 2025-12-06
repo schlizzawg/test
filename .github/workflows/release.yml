@@ -29,6 +29,6 @@ jobs:
             1.txt
             2.txt
             3.txt
-          make_latest: 'false'
+          make_latest: false
         env:
           GITHUB_TOKEN: ${{ github.token }}
