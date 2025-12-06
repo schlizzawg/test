@@ -21,7 +21,7 @@ jobs:
           echo "File 3" > 3.txt
 
       - name: Create Release
-        uses: dumbmoron/action-gh-release@stage
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: test-release-${{ github.run_number }}
           name: "Test Release ${{ github.run_number }}"
@@ -29,5 +29,6 @@ jobs:
             1.txt
             2.txt
             3.txt
+          make_latest: 'false'
         env:
           GITHUB_TOKEN: ${{ github.token }}
